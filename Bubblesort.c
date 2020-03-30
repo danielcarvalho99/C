@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 //função que realiza a ordenação
 
 void bolha (int n, int *v){
@@ -25,7 +25,8 @@ int i,n;
 printf("Quantos numeros tera seu vetor: ");
 scanf("%d",&n);
 
-int v[n];
+int *v;
+v = (int*)malloc(n * sizeof(int));
 
 printf("Digite os valores do seu vetor: ");
 
